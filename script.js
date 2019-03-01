@@ -54,14 +54,15 @@ else if (bmi >= 40){statusDisplay.innerHTML = "Class III obesity";}
 let bmrm = (66+(13.7*weight)+(5*heightInCm)-(6.8*age));
 let bmrf = (665+(9.6*weight)+(1.8*heightInCm)-(4.7*age));
 
-bmiDisplay.innerHTML = bmi;
-nweightDisplay.innerHTML = `${lnweight} KG to ${hnweight} KG`;
+bmiDisplay.innerHTML = bmi.toFixed(2);
+// nweightDisplay.innerHTML = `${lnweight} KG to ${hnweight} KG`;
+nweightDisplay.innerHTML = lnweight+" KG to "+hnweight+" KG";
 
 if (fgender.checked && age != ""){
-	bmrDisplay.innerHTML = bmrf;
+	bmrDisplay.innerHTML = bmrf.toFixed(2);
 } 
-else if (mgender.checked && age!= "") {bmrDisplay.innerHTML = bmrm;}
-else {bmrDisplay.innerHTML = '<p class = "red">&nbsp;Choose gender first.</p>';}
+else if (mgender.checked && age!= "") {bmrDisplay.innerHTML = bmrm.toFixed(2);}
+else {bmrDisplay.innerHTML = '<s class = "red i" style="text-decoration:none;">&nbsp;Choose gender first.</p>';}
 
 }
 

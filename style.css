@@ -19,6 +19,8 @@
 
 	background: lightgrey;
 	border-radius: 10px;
+	border: 1px solid darkseagreen;
+    box-shadow: 0 0 4px 0px black;
 }
 .resetButton {
 	width: 20%;
@@ -66,8 +68,12 @@
 }
 
 .resultContainer {
-	background-color: floralwhite;
+	background-color: ghostwhite;
 	display: none;
+	padding: 5px;
+    border: 5px solid skyblue;
+    box-shadow: inset 0 0 9px 1px #e0a956;
+
 }
 
 .left {
