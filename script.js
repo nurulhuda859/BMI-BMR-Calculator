@@ -14,16 +14,16 @@ let nweightDisplay = document.querySelector(".nweight");
 
 // Calculating BMI & BMR
 // Calculating BMI
-const run = () => {
+function run () {
 
 
 // Crating Variables
-let heightInFeet = Number(document.querySelector(".heightInFeet").value);
-let heightInInch = Number(document.querySelector(".heightInInch").value);
-let weight = Number(document.querySelector(".weight").value);
-let age = Number(document.querySelector(".age").value);
-let mgender = document.querySelector(".mgender");
-let fgender = document.querySelector(".fgender");
+let heightInFeet = Number(document.querySelector("#heightInFeet").value);
+let heightInInch = Number(document.querySelector("#heightInInch").value);
+let weight = Number(document.querySelector("#weight").value);
+let age = Number(document.querySelector("#age").value);
+let mgender = document.querySelector("#mgender");
+let fgender = document.querySelector("#fgender");
 
 
 
@@ -89,13 +89,3 @@ submitButton.addEventListener("click", run)
 
 
 // ----------------------------------------------------
-
-// function calculateBMI(height, weight) {
-// 	return (weight/(height*height));
-// };
-// function calculateBMR(height, weight, age, gender){
-//   var heightInCm = height*100;
-//   if (gender == "male"){return (66+(13.7*weight)+(5*heightInCm)-(6.8*age));}
-//   else if (gender == "female"){ return (665+(9.6*weight)+(1.8*heightInCm)-(4.7*age));}
-//   else {alert("Wrong Input")};
-// }

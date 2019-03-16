@@ -5,10 +5,9 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-
 	<title>BMR-BMI Calculator</title>
 
-
+<div class="test"></div>
 
 
 </head>
@@ -17,16 +16,16 @@
 		<h1>BMR-BMI <br>Calculator</h1><hr>
 	<div class="center">
 		<h4>Height</h4>
-		<input class="heightInFeet if" type="number" value="5"><p class="u i"> ft</p>
-		<input class="heightInInch if" type="number" value="5" max="11.99"><p class="u i"> inch</p>
+		<input id="heightInFeet" class="if" type="number" value="5"><p class="u i"> ft</p>
+		<input id="heightInInch" class="if" type="number" value="5" max="11.99"><p class="u i"> inch</p>
 		<h4>Weight</h4>
-		<input class="weight if" type="number" value="60"><p class="u i"> KG</p>
+		<input id="weight" class="if" type="number" value="60"><p class="u i"> KG</p>
 		<h4>Age</h4>
-		<input class="age if" type="number" value="25"><p class="u i"> Yr</p>
+		<input id="age" class="if" type="number" value="25"><p class="u i"> Yr</p>
 
 		<br>
-		<input class="fgender i"  type="radio" name="gender" value="female"><p class="i">Female</p>
-		<input class="mgender i"  type="radio" name="gender" value="male"><p class="i">Male</p>
+		<input id="fgender" class="i"  type="radio" name="gender" value="female"><p class="i">Female</p>
+		<input id="mgender" class="i"  type="radio" name="gender" value="male"><p class="i">Male</p>
 		<br><br>
 		<!-- <input class="resetButton button" type="reset" name="" value="Reset"> -->
 		<input class="submitButton button" type="button" name="" value="Measure">
@@ -68,6 +67,7 @@
 
 
 <script type="text/javascript" src="script.js"></script>
+<!-- <script type="text/javascript" src="bmi-bmr-calc.js"></script> -->
 
 </body>
 </html>
